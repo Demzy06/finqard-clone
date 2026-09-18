@@ -1,5 +1,7 @@
+import LogoImg from "../assets/logo/finqard-logo.png";
+
 function Logo() {
-  return <div>FinQard</div>;
+  return <img src={LogoImg} />;
 }
 
 export default Logo;
