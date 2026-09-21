@@ -1,3 +1,5 @@
+import Faqs from "../../components/Faqs";
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import HighlightsPrev from "../../components/HighlightsPrev";
 import Testimonials from "../../components/Testimonials";
@@ -14,6 +16,8 @@ function HomePage() {
         <TickerSection />
         <HighlightsPrev />
         <Testimonials />
+        <Faqs />
+        <Footer />
       </main>
     </div>
   );
