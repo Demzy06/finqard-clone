@@ -7,11 +7,11 @@ function Navbar({ navIsOpen, setNavIsOpen }) {
     //   className={`${navIsOpen ? `block` : `hidden md:block`} flex pt-14 flex-col items-center h-dvh fixed  top-18 z-100 w-full md:h-20 md:p-0 md:w-[80%] lg:w-[70%] bg-white md:bg-transparent md:top-0 md:relative md:flex md:flex-row`}
     // >
     <nav
-      className={`${navIsOpen ? `absolute` : `hidden md:block`}  top-27 left-0 w-full  `}
+      className={`${navIsOpen ? `absolute` : `hidden md:block`}  top-27 left-0 w-full z-1000`}
     >
       <ul
         // ref={ref}
-        className={`${1 ? "opacity-100 ease-in-out translate-y-0 scale-[1]" : "opacity-0 translate-y-2 scale-[0.9]"} transition-all duration-800 w-fit text-center md:flex md:justify-between md:w-full md:items-center h-fit m-auto`}
+        className={`${true ? "opacity-100 ease-in-out translate-y-0 scale-[1]" : "opacity-0 translate-y-2 scale-[0.9]"} transition-all duration-800 w-fit text-center md:flex md:justify-between md:w-full md:items-center h-fit m-auto`}
       >
         <div className="md:flex md:justify-between md:w-[70%] lg:w-[55%]">
           {navLinks.map((nav) => (
