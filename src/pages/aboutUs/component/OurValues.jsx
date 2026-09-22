@@ -1,4 +1,5 @@
 import ContentItem from "../../../components/ContentItem";
+import { values } from "../../../data/ourValues";
 
 function OurValues() {
   return (
@@ -19,8 +20,9 @@ function OurValues() {
         </p>
       </div>
       <div className="mt-15 grid gap-y-5">
-        <ContentItem />
-        <ContentItem />
+        {values.map((value, i) => (
+          <ContentItem value={value} numbering={i} />
+        ))}
       </div>
     </section>
   );
