@@ -16,8 +16,13 @@ function HomePageHeroSection() {
           for instant cash or instant digital assets
         </p>
       </article>
-      <div className="bg-[url('./assets/decorative/home-hero-img-sm.svg')] bg-cover bg-center bg-no-repeat h-110  w-full mt-4 rounded-[50px] z-1000 overflow-hidden">
-        <img src={HandMockup} alt="" className=" ml-12 pt-7 scale-175 " />
+      <div className="bg-[url('./assets/decorative/home-hero-img-sm.svg')] bg-cover bg-center bg-no-repeat h-110  w-full mt-4 rounded-[50px] z-1 overflow-hidden relative flex ">
+        <img
+          src={HandMockup}
+          alt="mockup-img"
+          className="ml-15 scale-x-[180%] scale-y-120"
+          // className="ml-12 pt-7 scale-175 object-bottom "
+        />
       </div>
     </section>
   );
