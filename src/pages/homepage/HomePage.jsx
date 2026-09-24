@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Faqs from "../../components/Faqs";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -7,8 +9,10 @@ import TickerSection from "../../components/TickerSection";
 
 import HomePageHeroSection from "./component/HomePageHeroSection";
 
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+const tickerText = [
+  " Explore our app to discover a variety of gift cards you can trade!",
+];
+
 function HomePage() {
   const location = useLocation();
   console.log(location);
@@ -22,12 +26,12 @@ function HomePage() {
   }, [location]);
 
   return (
-    <div className="h-fit">
+    <div className="h-fit ">
       <Header />
 
-      <main className=" bg-white h-fit">
+      <main className=" bg-white h-fit ">
         <HomePageHeroSection />
-        <TickerSection />
+        <TickerSection text={tickerText} />
         <HighlightsPrev />
         <Testimonials />
         <Faqs />
