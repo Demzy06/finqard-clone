@@ -8,7 +8,7 @@ const styles = {
 function WhatWeOffer({ offer }) {
   return (
     <div
-      className={`px-5 ${offer.type === "mockup" ? "pb-0" : "pb-10"} pt-15 bg-[#F5F4FC] bg-[url('${offer.bgImg}')]`}
+      className={`px-5 ${offer.type === "mockup" ? "pb-0" : "pb-10"} pt-15 bg-[#F5F4FC] bg-[url('./assets/hero/hero-section-bg-aesthetics.svg')]`}
     >
       <div className="">
         <div className="text-center mb-10">
