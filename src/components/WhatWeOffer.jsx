@@ -1,26 +1,25 @@
-import AboutUsImg from "../assets/hero/about-us.webp";
-// import xoxo from "../assets/hero/hero-section-bg-aesthetics.svg";
+// import AboutUsImg from "../assets/hero/about-us.webp";
+// import xoxo from ".";
 
-function WhatWeOffer({ bgImg, headerText, paragraphText, heroImg }) {
+const styles = {
+  hero: "h-80 object-cover rounded-4xl",
+  mockup: "w-[90%] m-auto",
+};
+function WhatWeOffer({ offer }) {
   return (
-    <div className="px-5 pb-10 pt-15 bg-[#F5F4FC] bg-[url('./assets/hero/hero-section-bg-aesthetics.svg')] ">
-      <div className=" ">
+    <div
+      className={`px-5 ${offer.type === "mockup" ? "pb-0" : "pb-10"} pt-15 bg-[#F5F4FC] bg-[url('${offer.bgImg}')]`}
+    >
+      <div className="">
         <div className="text-center mb-10">
           <h1 className="text-black-700 text-[32px] font-[550] leading-11">
-            We're building the future of giftcard trading
+            {offer.headerText}
           </h1>
           <p className="text-[15px] font-[450] text-grey-700 mt-9 ">
-            We're revolutionizing the world of virtual card payments and bill
-            management. Our app equips users to enable them to manage their
-            finances effortlessly, from handling payments and tracking gift card
-            trading.
+            {offer.paragraphText}
           </p>
         </div>
-        <img
-          src={AboutUsImg}
-          alt=""
-          className="h-80 object-cover rounded-4xl"
-        />
+        <img src={offer.heroImg} alt="" className={styles[offer.type]} />
       </div>
     </div>
   );
