@@ -21,7 +21,7 @@ function OurValues() {
       </div>
       <div className="mt-15 grid gap-y-5">
         {values.map((value, i) => (
-          <ContentItem value={value} numbering={i} />
+          <ContentItem content={value} numbering={i} />
         ))}
       </div>
     </section>
