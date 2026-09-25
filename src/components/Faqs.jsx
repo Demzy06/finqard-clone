@@ -4,7 +4,7 @@ import Accordion from "./Accordion";
 
 function Faqs() {
   return (
-    <section className="bg-grey-200 py-6">
+    <section className="bg-grey-200 py-6" id="faqs">
       <BriefSectionHighlight
         title={briefHighlight.title}
         headerText={briefHighlight.headerText}
