@@ -6,6 +6,8 @@ import Faqs from "../../components/Faqs";
 import Footer from "../../components/Footer";
 // import BackgroundImg from "../../assets/hero/hero-section-bg-aesthetics.svg";
 import AboutUsImg from "../../assets/hero/about-us.webp";
+import { useEffect } from "react";
+import { scrollToTop } from "../../helpers/scrollToTop";
 
 const offer = {
   bgImg: "./assets/hero/hero-section-bg-aesthetics.svg",
@@ -15,7 +17,12 @@ const offer = {
   heroImg: AboutUsImg,
   type: "hero",
 };
+
 function AboutUs() {
+  useEffect(function () {
+    scrollToTop();
+  }, []);
+
   return (
     <>
       <Header />
