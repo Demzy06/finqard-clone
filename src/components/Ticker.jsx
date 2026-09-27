@@ -1,14 +1,17 @@
 import { motion } from "motion/react";
 
 const items = [
-  "React",
-  "JavaScript",
-  "CSS",
-  "HTML",
-  "React",
-  "JavaScript",
-  "CSS",
-  "HTML",
+  "Google",
+  "Steam",
+  "Sephora",
+  "Nike",
+  "Roblox",
+  "Xbox",
+  "PSN",
+  "RazerGold",
+  "Walmart",
+  "Visa",
+  "Target",
 ];
 
 function Ticker({ start, end, styles }) {
