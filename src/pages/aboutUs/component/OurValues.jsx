@@ -16,7 +16,7 @@ function OurValues() {
           our users every single day.
         </p>
       </div>
-      <div className="mt-15 grid gap-y-5 md:grid grid-cols-3 gap-6">
+      <div className="mt-15 grid gap-y-5 md:grid md:grid-cols-3 gap-6">
         {values.map((value, i) => (
           <ContentItem content={value} numbering={i} />
         ))}
