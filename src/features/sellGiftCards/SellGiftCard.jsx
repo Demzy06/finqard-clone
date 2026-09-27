@@ -7,6 +7,8 @@ import FeaturesPageOverview from "../../components/FeaturesPageOverview";
 import ContentItem from "../../components/ContentItem";
 import Testimonals from "../../components/Testimonials";
 import Footer from "../../components/Footer";
+import { useEffect } from "react";
+import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 
 const offer = {
   bgImg: "./assets/hero/hero-section-bg-aesthetics.svg",
@@ -52,7 +54,12 @@ const pageOverviewCardContent = [
       "Trade gift cards securely using top-notch encryption and a thoroughly reviewed exchange platform.",
   },
 ];
+
 function SellGiftCard() {
+  useEffect(function () {
+    scrollToTop();
+  }, []);
+
   return (
     <>
       <Header />

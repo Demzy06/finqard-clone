@@ -8,6 +8,7 @@ import Testimonials from "../../components/Testimonials";
 import TickerSection from "../../components/TickerSection";
 
 import HomePageHeroSection from "./component/HomePageHeroSection";
+import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 
 const tickerText = [
   " Explore our app to discover a variety of gift cards you can trade!",
@@ -24,6 +25,10 @@ function HomePage() {
       });
     }
   }, [location]);
+
+  useEffect(function () {
+    scrollToTop();
+  }, []);
 
   return (
     <>

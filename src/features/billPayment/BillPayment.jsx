@@ -10,6 +10,8 @@ import ElectricityDecorativeImg from "../../assets/decorative/electricity-decora
 import TvDecorativeImg from "../../assets/decorative/tv-decorative.webp";
 import Testimonials from "../../components/Testimonials";
 import Footer from "../../components/Footer";
+import { useEffect } from "react";
+import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 
 const offer = {
   bgImg: "./assets/hero/hero-section-bg-aesthetics.svg",
@@ -31,31 +33,35 @@ const pageOverviewCardContent = [
   {
     contentHeaderText: "Airtime",
     contentDecorativeImg: AirtimeDecorativeImg,
-    gridColSize: "col-span-2",
+    gridColSize: "lg:col-span-2",
   },
   {
     contentHeaderText: "Data",
     contentDecorativeImg: DataDecorativeImg,
-    gridColSize: "col-span-2",
+    gridColSize: "lg:col-span-2",
   },
   {
     contentHeaderText: "Electricity",
     contentDecorativeImg: ElectricityDecorativeImg,
-    gridColSize: "col-span-2",
+    gridColSize: "lg:col-span-2",
   },
   {
     contentHeaderText: "Cable TV",
     contentDecorativeImg: TvDecorativeImg,
-    gridColSize: "col-span-3",
+    gridColSize: "lg:col-span-3",
   },
   {
     contentHeaderText: "Betting",
     contentDecorativeImg: BettingDecorativeImg,
-    gridColSize: "col-span-3",
+    gridColSize: "lg:col-span-3",
   },
 ];
 
 function BillPayment() {
+  useEffect(function () {
+    scrollToTop();
+  }, []);
+
   return (
     <>
       <Header />
