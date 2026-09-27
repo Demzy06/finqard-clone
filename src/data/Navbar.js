@@ -11,7 +11,6 @@ export const navLinks = [
   },
   {
     title: "Products",
-    path: "/"
   },
   {
     title: "About Us",
