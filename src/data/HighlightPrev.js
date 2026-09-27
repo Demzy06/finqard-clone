@@ -13,7 +13,8 @@ export const features = [
     image: AmazonImg,
     bodyStyle: "bg-purple-700 pt-10 pl-5 rounded-2xl h-fit pb-0.5",
     titleStyle: "pb-4 text-white text-[30px] font-[430]",
-    paragraphStyle: "text-white text-[18px] font-light w-[75%] tracking-wide leading-5.5"
+    paragraphStyle: "text-white text-[18px] font-light w-[75%] tracking-wide leading-5.5",
+    gridColSize: "col-span-3"
   },
   {
     title: "Exchange Giftcards to Crypto",
@@ -22,7 +23,8 @@ export const features = [
     image: CardCoinImg,
     bodyStyle: "bg-grey-100 pt-10 pl-5 rounded-2xl h-fit pb-0.5",
     titleStyle: "pb-4 text-purple-700 text-[30px] font-[430]",
-    paragraphStyle: "text-purple-700 text-[18px] font-light w-[75%] tracking-wide leading-5.5"
+    paragraphStyle: "text-purple-700 text-[18px] font-light w-[75%] tracking-wide leading-5.5",
+    gridColSize: "col-span-3"
   },
   {
     title: "Easy easier card management",
@@ -31,7 +33,8 @@ export const features = [
     image: VisaCardImg,
     bodyStyle: "bg-white border border-grey-100 pt-10 pl-5 rounded-2xl h-fit pb-0.5",
     titleStyle: "pb-4 text-black-700 text-[30px] font-[430]",
-    paragraphStyle: "text-grey-600 text-[18px] font-light w-[75%] tracking-wide leading-5.5"
+    paragraphStyle: "text-grey-600 text-[18px] font-light w-[75%] tracking-wide leading-5.5",
+    gridColSize: "col-span-2"
   },
   {
     title: "Instant deposit & withdrawals",
@@ -40,7 +43,8 @@ export const features = [
     image: TurboImg,
     bodyStyle: "bg-black-700 border border-grey-100 pt-10 pl-5 rounded-2xl h-fit pb-0.5",
     titleStyle: "pb-4 text-white text-[30px] font-[430]",
-    paragraphStyle: "text-white text-[18px] font-light w-[75%] tracking-wide leading-5.5"
+    paragraphStyle: "text-white text-[18px] font-light w-[75%] tracking-wide leading-5.5",
+    gridColSize: "col-span-2",
   },
   {
     title: "Pay Bills",
@@ -49,7 +53,8 @@ export const features = [
     image: ReceiptImg,
     bodyStyle: "bg-grey-400 border border-grey-100 pt-10 pl-5 rounded-2xl h-fit pb-0.5",
     titleStyle: "pb-4 text-black-700 text-[30px] font-[430]",
-    paragraphStyle: "text-grey-600 text-[18px] font-light w-[75%] tracking-wide leading-5.5"
+    paragraphStyle: "text-grey-600 text-[18px] font-light w-[75%] tracking-wide leading-5.5",
+    gridColSize: "col-span-2"
   },
 ];
 
