@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Faqs from "../components/Faqs";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
+import { scrollToTop } from "../helpers/scrollToTop";
 
 function ContactUs() {
   useEffect(function () {

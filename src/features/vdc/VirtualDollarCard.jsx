@@ -7,7 +7,7 @@ import VDCSecondaryImg from "../../assets/secondary/vdc-content-img-1.svg";
 import Testimonials from "../../components/Testimonials";
 import Footer from "../../components/Footer";
 import { useEffect } from "react";
-import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
+import { scrollToTop } from "../../helpers/scrollToTop";
 
 const offer = {
   bgImg: "./assets/hero/hero-section-bg-aesthetics.svg",
