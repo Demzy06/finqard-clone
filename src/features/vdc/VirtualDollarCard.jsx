@@ -61,23 +61,23 @@ function VirtualDollarCard() {
       <Header />
       <main>
         <WhatWeOffer offer={offer} />
-        <section className="mt-12">
+        <section className="mt-12 xl:w-[90%] xl:m-auto xl:py-25 xl:px-25 lg:w-full lg:m-auto lg:py-25 lg:px-25">
           <FeaturesPageOverview
             headerIntro={pageOverview.headerIntro}
             paragraphs={pageOverview.paragraphs}
           />
-          <div className="grid gap-y-5 px-4 mt-12">
+          <div className="grid gap-y-5 px-4 mt-12 lg:grid lg:grid-cols-2 xl:gap-6 lg:gap-6">
             {pageOverviewCardContent.map((content, i) => (
               <ContentItem content={content} numbering={i} />
             ))}
           </div>
         </section>
-        <section className="px-4 mt-15">
-          <div>
-            <h2 className="text-[28px] font-[550] text-center mb-8 m-auto">
+        <section className="px-4 mt-15 lg:flex lg:justify-between xl:w-[90%] lg:m-auto lg:py-30 lg:px-20 xl:py-30 xl:px-25">
+          <div className="xl:w-[45%] lg:w-[45%]">
+            <h2 className="text-[28px] font-[550] text-center mb-8 m-auto xl:text-[40px] xl:text-start">
               More use options on FinQard Virtual Card
             </h2>
-            <p className="text-center text-[16px] font-light w-[85%] m-auto text-grey-700">
+            <p className="text-center text-[16px] font-light w-[85%] m-auto text-grey-700 xl:text-[20px] xl:text-start xl:m-0 xl:w-[95%] xl:leading-6">
               FinQard provides multiple virtual dollar card options built for
               online, international, and contactless payments. Each option is
               designed to work reliably, depending on how and where you need to
@@ -85,13 +85,13 @@ function VirtualDollarCard() {
             </p>
             <ul className="mt-11 grid gap-y-4 pl-8">
               {virtualCardUseOptions.map((option) => (
-                <li className="list-disc text-[20px] font-[350] text-grey-700 leading-6">
+                <li className="list-disc text-[20px] font-[350] text-grey-700 leading-6 xl:text-[20px]">
                   {option}
                 </li>
               ))}
             </ul>
           </div>
-          <div className="bg-[#F9F9FA] mt-15 py-9 px-7 rounded-3xl bg-linear-to-bl from-[#F9F9FA]  to-white ">
+          <div className="bg-[#F9F9FA] mt-15 py-9 px-7 rounded-3xl bg-linear-to-bl from-[#F9F9FA] to-white lg:w-[45%] xl:w-[45%] lg:flex xl:items-center xl:mt-0 lg:mt-0 lg:items-center lg:px-0">
             <img src={VDCSecondaryImg} alt="card-img" />
           </div>
         </section>

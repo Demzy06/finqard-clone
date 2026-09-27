@@ -51,12 +51,12 @@ function VirtualBankAccount() {
       <Header />
       <main>
         <WhatWeOffer offer={offer} />
-        <section className="mt-12">
+        <section className="mt-12 lg:px-20 lg:py-15 xl:px-45">
           <FeaturesPageOverview
             headerIntro={pageOverview.headerIntro}
             paragraphs={pageOverview.paragraphs}
           />
-          <div className="grid gap-y-5 px-4 mt-12">
+          <div className="grid gap-y-5 px-4 mt-12 lg:grid lg:grid-cols-2 lg:gap-6 lg:mt-25">
             {pageOverviewCardContent.map((content, i) => (
               <ContentItem content={content} numbering={i} />
             ))}

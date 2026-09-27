@@ -6,7 +6,7 @@ function ContactUs() {
   return (
     <>
       <Header />
-      <section className="pt-25 pb-30 px-4 bg-gray-100">
+      <section className="pt-25 pb-30 px-4 bg-gray-100 lg:px-30 xl:px-100 xl:w-[90%] xl:m-auto">
         <div>
           <div className="px-6 w-fit m-auto text-center ">
             <h1 className="text-[32px] font-medium mb-3">Contact Us</h1>
@@ -17,24 +17,36 @@ function ContactUs() {
           </div>
           <div className="px-4 py-10 bg-white rounded-3xl mt-20">
             <form action="" className="flex flex-col">
-              <label className="text-[14px] font-light" for="firstName">
-                First Name
-              </label>
-              <input
-                className="mb-6 mt-1.5 bg-[#F3F4F6] rounded-lg py-2 px-3 "
-                type="text"
-                id="firstName"
-                placeholder="First name"
-              />
-              <label className="text-[14px] font-light" for="LastName">
-                Last Name
-              </label>
-              <input
-                className="mb-6 mt-1.5 bg-[#F3F4F6] rounded-lg py-2 px-3 "
-                type="text"
-                id="hey"
-                placeholder="Last name"
-              />
+              <div className="lg:flex gap-x-10">
+                <span className="lg:flex-5">
+                  <label
+                    className="text-[14px] font-light lg:block"
+                    for="firstName"
+                  >
+                    First Name
+                  </label>
+                  <input
+                    className="mb-6 mt-1.5 bg-[#F3F4F6] rounded-lg py-2 px-3 lg:w-full "
+                    type="text"
+                    id="firstName"
+                    placeholder="First name"
+                  />
+                </span>
+                <span className="lg:flex-5">
+                  <label
+                    className="text-[14px] font-light lg:block"
+                    for="LastName"
+                  >
+                    Last Name
+                  </label>
+                  <input
+                    className="mb-6 mt-1.5 bg-[#F3F4F6] rounded-lg py-2 px-3 lg:w-full"
+                    type="text"
+                    id="hey"
+                    placeholder="Last name"
+                  />
+                </span>
+              </div>
               <label className="text-[14px] font-light" for="email">
                 Email
               </label>

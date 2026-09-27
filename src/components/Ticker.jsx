@@ -1,6 +1,15 @@
 import { motion } from "motion/react";
 
-const items = ["React", "JavaScript", "CSS", "HTML"];
+const items = [
+  "React",
+  "JavaScript",
+  "CSS",
+  "HTML",
+  "React",
+  "JavaScript",
+  "CSS",
+  "HTML",
+];
 
 function Ticker({ start, end, styles }) {
   return (
@@ -11,13 +20,16 @@ function Ticker({ start, end, styles }) {
           x: [start, end],
         }}
         transition={{
-          duration: 5,
+          duration: 15,
           repeat: Infinity,
           ease: "linear",
         }}
       >
         {[...items, ...items].map((items, i) => (
-          <span key={i} className="py-6 px-9 bg-white rounded-lg">
+          <span
+            key={i}
+            className="py-6 px-9 bg-white rounded-lg md:text-[30px]"
+          >
             {items}
           </span>
         ))}

@@ -10,9 +10,9 @@ import Footer from "../../components/Footer";
 
 const offer = {
   bgImg: "./assets/hero/hero-section-bg-aesthetics.svg",
-  headerText: " We're building the future of giftcard trading",
+  headerText: "Sell gift card and earn Naira in Seconds",
   paragraphText:
-    "We're revolutionizing the world of virtual card payments and bill management. Our app equips users to enable them to manage their finances effortlessly, from handling payments and tracking gift card trading.",
+    "Turn your unused gift cards into cash instantly at unbeatable rates!",
   heroImg: MockupGiftcard,
   type: "mockup",
 };
@@ -58,17 +58,19 @@ function SellGiftCard() {
       <Header />
       <main>
         <WhatWeOffer offer={offer} />
-        <section className="mt-12">
-          <div className="w-[85%] m-auto text-center">
-            <h2 className="text-[30px] font-[550]text-black-700 mb-8">
-              The best giftcard trading platform in Nigeria
-            </h2>
-            {xo.map((item) => (
-              <p className="text-[16px] text-grey-600 mb-4 font-light">
-                {item}
-              </p>
-            ))}
-            <div className="bg-[#F9F9FA] mt-15 p-4 rounded-3xl">
+        <section className="mt-12 xl:w-[90%] xl:m-auto xl:py-20">
+          <div className="w-[85%] m-auto text-center lg:flex lg:justify-between lg:items-center">
+            <div className="lg:w-[45%]">
+              <h2 className="text-[30px] font-[550]text-black-700 mb-8 lg:text-[40px] lg:font-[550] lg:text-start">
+                The best giftcard trading platform in Nigeria
+              </h2>
+              {xo.map((item) => (
+                <p className="text-[16px] text-grey-600 mb-4 font-light lg:text-[20px] lg:font-[350] lg:text-start">
+                  {item}
+                </p>
+              ))}
+            </div>
+            <div className="bg-[#F9F9FA] mt-15 p-4 rounded-3xl lg:w-[45%] lg:mt-0">
               <img src={FinqardGiftCardImg} alt="finQard-art-img" />
             </div>
           </div>
@@ -76,12 +78,12 @@ function SellGiftCard() {
         <section>
           <TickerSection text="Accepted Giftcards" styles="text-center" />
         </section>
-        <section>
+        <section className="lg:px-20 xl:w-[90%] xl:m-auto xl:py-20">
           <FeaturesPageOverview
             headerIntro={pageOverview.headerIntro}
             paragraphs={pageOverview.paragraphs}
           />
-          <div className="grid gap-y-5 px-4 mt-12">
+          <div className="grid gap-y-5 px-4 mt-12 lg:grid lg:grid-cols-2 lg:gap-5">
             {pageOverviewCardContent.map((content, i) => (
               <ContentItem content={content} numbering={i} />
             ))}

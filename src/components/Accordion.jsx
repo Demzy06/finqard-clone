@@ -8,7 +8,7 @@ function Accordion({ accordion }) {
         className="flex justify-between"
         onClick={() => setIsOpen((open) => !open)}
       >
-        <p className="w-[70%] text-[18px] font-[550] text-black-700">
+        <p className="w-[70%] text-[18px] font-[550] text-black-700 md:text-[22px]">
           {accordion.question}
         </p>
         <p className="text-[30px] rounded-full border h-fit w-fit px-1">+</p>

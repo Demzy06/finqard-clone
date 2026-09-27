@@ -26,18 +26,18 @@ function HomePage() {
   }, [location]);
 
   return (
-    <div className="h-fit ">
+    <>
       <Header />
 
-      <main className=" bg-white h-fit ">
+      <main className=" bg-white h-fit md:overflow-x-hidden xl:mt-10  :px-120">
         <HomePageHeroSection />
         <TickerSection text={tickerText} />
         <HighlightsPrev />
         <Testimonials />
         <Faqs />
-        <Footer />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
 

@@ -31,22 +31,27 @@ const pageOverviewCardContent = [
   {
     contentHeaderText: "Airtime",
     contentDecorativeImg: AirtimeDecorativeImg,
+    gridColSize: "col-span-2",
   },
   {
     contentHeaderText: "Data",
     contentDecorativeImg: DataDecorativeImg,
+    gridColSize: "col-span-2",
   },
   {
     contentHeaderText: "Electricity",
     contentDecorativeImg: ElectricityDecorativeImg,
+    gridColSize: "col-span-2",
   },
   {
     contentHeaderText: "Cable TV",
     contentDecorativeImg: TvDecorativeImg,
+    gridColSize: "col-span-3",
   },
   {
     contentHeaderText: "Betting",
     contentDecorativeImg: BettingDecorativeImg,
+    gridColSize: "col-span-3",
   },
 ];
 
@@ -56,18 +61,20 @@ function BillPayment() {
       <Header />
       <main>
         <WhatWeOffer offer={offer} />
-        <section className="mt-12">
+        <section className="mt-12 lg:px-20 lg:py-30 xl:px-45">
           <FeaturesPageOverview
             headerIntro={pageOverview.headerIntro}
             paragraphs={pageOverview.paragraphs}
           />
-          <div className="grid gap-y-5 px-4 mt-12">
+          <div className="grid gap-y-5 px-4 mt-12 lg:grid lg:grid-cols-6 lg:gap-6">
             {pageOverviewCardContent.map((content, i) => (
-              <div className="bg-[#FAFAFA] p-5 pr-0 py-7 rounded-4xl border border-gray-100 relative">
+              <div
+                className={`bg-[#FAFAFA] p-5 pr-0 py-7 rounded-4xl border border-gray-100 relative ${content.gridColSize}`}
+              >
                 <h2 className="text-[22px] font-[550] text-purple-700 bg-grey-100 py-3 px-5 w-fit h-fit rounded-full">
                   {i + 1}
                 </h2>
-                <div className="mt-10 w-[85%] flex justify-between">
+                <div className="mt-10 w-[85%] flex justify-between lg:w-fit">
                   <h2 className="text-[23px] font-semibold">
                     {content.contentHeaderText}
                   </h2>

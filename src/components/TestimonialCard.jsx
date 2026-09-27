@@ -3,7 +3,7 @@ import Avatar1 from "../assets/avatars/avatar1.webp";
 function TestimonialCard({ testimony }) {
   return (
     <div
-      className={`${testimony.type === "base" ? " bg-purple-700 text-white" : "bg-grey-300 text-grey-800 flex flex-col-reverse"} px-7 py-10  mt-8 rounded-2xl`}
+      className={`${testimony.type === "base" ? " bg-purple-700 text-white" : "bg-grey-300 text-grey-800 flex flex-col-reverse"} px-7 py-10  mt-8 rounded-2xl xl:w-110`}
     >
       <div className="flex items-center">
         <div className=" h-12 w-12 mr-4">

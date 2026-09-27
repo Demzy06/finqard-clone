@@ -19,7 +19,7 @@ function AboutUs() {
   return (
     <>
       <Header />
-      <main className="">
+      <main className="xl:px-20">
         <WhatWeOffer offer={offer} />
         <FinQardStatement />
         <OurValues />
